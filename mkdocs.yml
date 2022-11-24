@@ -1,0 +1,35 @@
+site_name: Driva Dev Portal
+
+theme:
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        name: Switch to dark mode
+        icon: material/brightness-7
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        name: Switch to light mode
+        icon: material/brightness-4
+  name: material
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+  - apicall:
+      icons: true
+extra:
+  base_url: https://api.driva.io/api/v1
+extra_javascript:
+  - js/main.js
